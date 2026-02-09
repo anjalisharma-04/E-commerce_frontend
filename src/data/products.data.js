@@ -1,3 +1,4 @@
+// src/data/products.data.js
 export const products = [
   {
     id: 1,
@@ -10,7 +11,34 @@ export const products = [
     category: "electronics",
     brand: "Sony",
     image: "/src/assets/products/p1.jpg",
+    images: ["/src/assets/products/p1.jpg"],
+    colors: ["Black", "White", "Blue"],
+    description: "Premium wireless headphones with deep bass and clear sound.",
+    longDescription:
+      "Designed for long listening sessions with active noise cancellation and all-day comfort.",
+    features: [
+      "Active Noise Cancellation",
+      "40 Hours Battery Backup",
+      "Bluetooth 5.0",
+      "Built-in Microphone",
+    ],
+    specs: {
+      Brand: "Sony",
+      Type: "Over-Ear",
+      Connectivity: "Bluetooth",
+      Battery: "40 Hours",
+      Warranty: "1 Year",
+    },
+    seller: "TechGear Store",
+    sellerRating: 4.3,
+    reviewList: [
+      { name: "Shyam", comment: "Sound quality is amazing.", time: "2 days ago" },
+      { name: "Rohit", comment: "Very comfortable.", time: "5 days ago" },
+      { name: "Ram", comment: "Sound is good.", time: "2 days ago" },
+      { name: "Shalini", comment: "Very good product.", time: "5 days ago" },
+    ],
   },
+
   {
     id: 2,
     title: "Smart Fitness Watch",
@@ -22,7 +50,31 @@ export const products = [
     category: "electronics",
     brand: "Apple",
     image: "/src/assets/products/p2.jpg",
+    images: ["/src/assets/products/p2.jpg"],
+    colors: ["Black", "Silver"],
+    description: "Smart watch to track fitness and health activities.",
+    longDescription:
+      "Track steps, heart rate, sleep patterns, and workouts with accurate sensors.",
+    features: [
+      "Heart Rate Monitoring",
+      "Sleep Tracking",
+      "Water Resistant",
+      "7 Days Battery Life",
+    ],
+    specs: {
+      Brand: "Apple",
+      Display: "AMOLED",
+      Battery: "7 Days",
+      Waterproof: "Yes",
+      Warranty: "1 Year",
+    },
+    seller: "Wearable Hub",
+    sellerRating: 4.4,
+    reviewList: [
+      { name: "Sneha", comment: "Accurate fitness tracking.", time: "3 days ago" },
+    ],
   },
+
   {
     id: 3,
     title: "Casual Denim Jacket",
@@ -34,7 +86,25 @@ export const products = [
     category: "fashion",
     brand: "Levis",
     image: "/src/assets/products/p3.jpg",
+    images: ["/src/assets/products/p3.jpg"],
+    colors: ["Blue", "Black"],
+    description: "Stylish denim jacket for everyday casual wear.",
+    longDescription:
+      "Made from premium denim fabric, suitable for all seasons and occasions.",
+    features: ["Premium Denim Fabric", "Comfort Fit", "All Season Wear"],
+    specs: {
+      Brand: "Levis",
+      Material: "Denim",
+      Fit: "Regular",
+      WashCare: "Machine Wash",
+    },
+    seller: "Urban Fashion",
+    sellerRating: 4.2,
+    reviewList: [
+      { name: "Rahul", comment: "Perfect fitting jacket.", time: "4 days ago" },
+    ],
   },
+
   {
     id: 4,
     title: "Non-Stick Cookware Set",
@@ -46,7 +116,25 @@ export const products = [
     category: "home-kitchen",
     brand: "Prestige",
     image: "/src/assets/products/p4.jpg",
+    images: ["/src/assets/products/p4.jpg"],
+    colors: ["Black"],
+    description: "Durable non-stick cookware set for daily cooking.",
+    longDescription:
+      "Cook healthy meals with minimal oil using premium non-stick cookware.",
+    features: ["Non-Stick Coating", "Heat Resistant", "Easy Cleaning"],
+    specs: {
+      Brand: "Prestige",
+      Material: "Aluminium",
+      Pieces: "3",
+      Warranty: "2 Years",
+    },
+    seller: "HomeEssentials",
+    sellerRating: 4.3,
+    reviewList: [
+      { name: "Neha", comment: "Very useful cookware.", time: "1 week ago" },
+    ],
   },
+
   {
     id: 5,
     title: "Luxury Skincare Set",
@@ -58,7 +146,23 @@ export const products = [
     category: "beauty",
     brand: "Lakme",
     image: "/src/assets/products/p5.jpg",
+    images: ["/src/assets/products/p5.jpg"],
+    colors: ["Standard"],
+    description: "Complete skincare solution for glowing skin.",
+    longDescription:
+      "Includes face wash, serum, and moisturizer for daily skincare.",
+    features: ["Dermatologically Tested", "All Skin Types"],
+    specs: {
+      Brand: "Lakme",
+      SkinType: "All",
+    },
+    seller: "Beauty Store",
+    sellerRating: 4.6,
+    reviewList: [
+      { name: "Pooja", comment: "Skin feels smooth.", time: "2 days ago" },
+    ],
   },
+
   {
     id: 6,
     title: "Running Shoes Pro",
@@ -70,7 +174,24 @@ export const products = [
     category: "sports",
     brand: "Nike",
     image: "/src/assets/products/p6.jpg",
+    images: ["/src/assets/products/p6.jpg"],
+    colors: ["Black", "White"],
+    description: "Lightweight running shoes for workouts.",
+    longDescription:
+      "Designed for comfort, grip, and durability during training sessions.",
+    features: ["Breathable Mesh", "Cushioned Sole", "Slip Resistant"],
+    specs: {
+      Brand: "Nike",
+      Usage: "Running",
+      Sole: "Rubber",
+    },
+    seller: "Sports Arena",
+    sellerRating: 4.5,
+    reviewList: [
+      { name: "Vikas", comment: "Very comfortable.", time: "3 days ago" },
+    ],
   },
+
   {
     id: 7,
     title: "Bestselling Novel Collection",
@@ -82,7 +203,24 @@ export const products = [
     category: "books",
     brand: "Penguin",
     image: "/src/assets/products/p7.jpg",
+    images: ["/src/assets/products/p7.jpg"],
+    colors: ["Paperback"],
+    description: "Collection of popular bestselling novels.",
+    longDescription:
+      "A perfect collection for fiction lovers and book enthusiasts.",
+    features: ["High Quality Print", "Multiple Titles"],
+    specs: {
+      Publisher: "Penguin",
+      Language: "English",
+      Binding: "Paperback",
+    },
+    seller: "Book World",
+    sellerRating: 4.7,
+    reviewList: [
+      { name: "Arjun", comment: "Loved this collection.", time: "1 week ago" },
+    ],
   },
+
   {
     id: 8,
     title: "Wireless Gaming Mouse",
@@ -94,7 +232,24 @@ export const products = [
     category: "electronics",
     brand: "Logitech",
     image: "/src/assets/products/p8.jpg",
+    images: ["/src/assets/products/p8.jpg"],
+    colors: ["Black"],
+    description: "High precision wireless mouse for gaming.",
+    longDescription:
+      "Provides smooth tracking, fast response, and ergonomic grip.",
+    features: ["High DPI Sensor", "Ergonomic Design", "Lag Free Wireless"],
+    specs: {
+      Brand: "Logitech",
+      DPI: "16000",
+      Connectivity: "Wireless",
+    },
+    seller: "Gaming Zone",
+    sellerRating: 4.5,
+    reviewList: [
+      { name: "Kunal", comment: "Perfect for gaming.", time: "5 days ago" },
+    ],
   },
+
   {
     id: 9,
     title: "Bluetooth Speaker",
@@ -106,7 +261,24 @@ export const products = [
     category: "electronics",
     brand: "JBL",
     image: "/src/assets/products/p9.jpg",
+    images: ["/src/assets/products/p9.jpg"],
+    colors: ["Black", "Blue"],
+    description: "Portable Bluetooth speaker with powerful sound.",
+    longDescription:
+      "Enjoy deep bass and clear audio in a compact portable speaker.",
+    features: ["Powerful Bass", "Portable Design", "Long Battery Life"],
+    specs: {
+      Brand: "JBL",
+      Battery: "12 Hours",
+      Connectivity: "Bluetooth",
+    },
+    seller: "Sound Hub",
+    sellerRating: 4.4,
+    reviewList: [
+      { name: "Manish", comment: "Great sound quality.", time: "4 days ago" },
+    ],
   },
+
   {
     id: 10,
     title: "Leather Wallet",
@@ -118,8 +290,24 @@ export const products = [
     category: "fashion",
     brand: "Wildcraft",
     image: "/src/assets/products/p10.jpg",
+    images: ["/src/assets/products/p10.jpg"],
+    colors: ["Brown", "Black"],
+    description: "Premium leather wallet with slim design.",
+    longDescription:
+      "Compact wallet with multiple compartments for daily use.",
+    features: ["Genuine Leather", "Slim Design", "Multiple Card Slots"],
+    specs: {
+      Brand: "Wildcraft",
+      Material: "Leather",
+    },
+    seller: "Fashion Hub",
+    sellerRating: 4.4,
+    reviewList: [
+      { name: "Ankit", comment: "Looks premium.", time: "1 week ago" },
+    ],
   },
-  {
+
+    {
     id: 11,
     title: "Coffee Maker Machine",
     price: 3999,
@@ -130,7 +318,24 @@ export const products = [
     category: "home-kitchen",
     brand: "Philips",
     image: "/src/assets/products/p11.jpg",
+    images: ["/src/assets/products/p11.jpg"],
+    colors: ["Black"],
+    description: "Automatic coffee maker for fresh coffee at home.",
+    longDescription:
+      "Brew rich and aromatic coffee easily with this compact and efficient coffee maker.",
+    features: ["Automatic Brewing", "Easy Cleaning", "Compact Design"],
+    specs: {
+      Brand: "Philips",
+      Capacity: "1.2 L",
+      Power: "1000W",
+    },
+    seller: "Kitchen World",
+    sellerRating: 4.4,
+    reviewList: [
+      { name: "Suresh", comment: "Coffee tastes great.", time: "6 days ago" },
+    ],
   },
+
   {
     id: 12,
     title: "Face Serum Set",
@@ -142,7 +347,23 @@ export const products = [
     category: "beauty",
     brand: "Mamaearth",
     image: "/src/assets/products/p12.jpg",
+    images: ["/src/assets/products/p12.jpg"],
+    colors: ["Standard"],
+    description: "Nourishing face serum set for glowing skin.",
+    longDescription:
+      "Improves skin texture and hydration with regular use.",
+    features: ["Paraben Free", "Natural Ingredients"],
+    specs: {
+      Brand: "Mamaearth",
+      SkinType: "All",
+    },
+    seller: "Glow Beauty",
+    sellerRating: 4.5,
+    reviewList: [
+      { name: "Ritu", comment: "Skin feels hydrated.", time: "4 days ago" },
+    ],
   },
+
   {
     id: 13,
     title: "Yoga Mat Premium",
@@ -154,7 +375,24 @@ export const products = [
     category: "sports",
     brand: "Boldfit",
     image: "/src/assets/products/p13.jpg",
+    images: ["/src/assets/products/p13.jpg"],
+    colors: ["Purple", "Blue"],
+    description: "Premium yoga mat for daily workouts.",
+    longDescription:
+      "Provides excellent grip and cushioning for yoga and fitness exercises.",
+    features: ["Non-Slip Surface", "Extra Cushioning"],
+    specs: {
+      Brand: "Boldfit",
+      Thickness: "6mm",
+      Material: "PVC",
+    },
+    seller: "Fit Store",
+    sellerRating: 4.4,
+    reviewList: [
+      { name: "Anjali", comment: "Good grip and comfort.", time: "1 week ago" },
+    ],
   },
+
   {
     id: 14,
     title: "Mystery Thriller Book",
@@ -166,7 +404,23 @@ export const products = [
     category: "books",
     brand: "HarperCollins",
     image: "/src/assets/products/p14.jpg",
+    images: ["/src/assets/products/p14.jpg"],
+    colors: ["Paperback"],
+    description: "Gripping mystery thriller novel.",
+    longDescription:
+      "Keeps readers hooked with suspenseful twists till the last page.",
+    features: ["Best Seller", "Engaging Story"],
+    specs: {
+      Publisher: "HarperCollins",
+      Language: "English",
+    },
+    seller: "Book World",
+    sellerRating: 4.6,
+    reviewList: [
+      { name: "Karan", comment: "Could not put it down.", time: "5 days ago" },
+    ],
   },
+
   {
     id: 15,
     title: "Mechanical Keyboard",
@@ -178,7 +432,24 @@ export const products = [
     category: "electronics",
     brand: "Redragon",
     image: "/src/assets/products/p15.jpg",
+    images: ["/src/assets/products/p15.jpg"],
+    colors: ["Black"],
+    description: "Mechanical keyboard for gaming and typing.",
+    longDescription:
+      "Offers tactile feedback and durable keys for long sessions.",
+    features: ["RGB Lighting", "Mechanical Switches"],
+    specs: {
+      Brand: "Redragon",
+      SwitchType: "Blue",
+      Connectivity: "Wired",
+    },
+    seller: "Gaming Zone",
+    sellerRating: 4.5,
+    reviewList: [
+      { name: "Nikhil", comment: "Great typing experience.", time: "6 days ago" },
+    ],
   },
+
   {
     id: 16,
     title: "Designer Sunglasses",
@@ -190,7 +461,23 @@ export const products = [
     category: "fashion",
     brand: "RayBan",
     image: "/src/assets/products/p16.jpg",
+    images: ["/src/assets/products/p16.jpg"],
+    colors: ["Black", "Brown"],
+    description: "Stylish designer sunglasses with UV protection.",
+    longDescription:
+      "Protects eyes from harmful rays while enhancing your style.",
+    features: ["UV Protection", "Lightweight Frame"],
+    specs: {
+      Brand: "RayBan",
+      FrameMaterial: "Plastic",
+    },
+    seller: "Fashion Hub",
+    sellerRating: 4.4,
+    reviewList: [
+      { name: "Sahil", comment: "Looks stylish.", time: "1 week ago" },
+    ],
   },
+
   {
     id: 17,
     title: "Air Fryer Digital",
@@ -202,7 +489,24 @@ export const products = [
     category: "home-kitchen",
     brand: "Havells",
     image: "/src/assets/products/p17.jpg",
+    images: ["/src/assets/products/p17.jpg"],
+    colors: ["Black"],
+    description: "Digital air fryer for healthy cooking.",
+    longDescription:
+      "Prepare oil-free snacks and meals easily with digital controls.",
+    features: ["Oil Free Cooking", "Digital Display"],
+    specs: {
+      Brand: "Havells",
+      Capacity: "4 L",
+      Power: "1400W",
+    },
+    seller: "Kitchen World",
+    sellerRating: 4.5,
+    reviewList: [
+      { name: "Meena", comment: "Very convenient.", time: "5 days ago" },
+    ],
   },
+
   {
     id: 18,
     title: "Hair Dryer Professional",
@@ -214,7 +518,23 @@ export const products = [
     category: "beauty",
     brand: "Philips",
     image: "/src/assets/products/p18.jpg",
+    images: ["/src/assets/products/p18.jpg"],
+    colors: ["Black"],
+    description: "Professional hair dryer for salon finish.",
+    longDescription:
+      "Provides fast drying with heat protection technology.",
+    features: ["Heat Protection", "Fast Drying"],
+    specs: {
+      Brand: "Philips",
+      Power: "1200W",
+    },
+    seller: "Beauty Store",
+    sellerRating: 4.5,
+    reviewList: [
+      { name: "Riya", comment: "Dries hair quickly.", time: "3 days ago" },
+    ],
   },
+
   {
     id: 19,
     title: "Cricket Bat Professional",
@@ -226,7 +546,23 @@ export const products = [
     category: "sports",
     brand: "SG",
     image: "/src/assets/products/p19.jpg",
+    images: ["/src/assets/products/p19.jpg"],
+    colors: ["Wood"],
+    description: "Professional cricket bat for matches.",
+    longDescription:
+      "Made from premium willow wood for powerful shots.",
+    features: ["Premium Willow", "Strong Grip"],
+    specs: {
+      Brand: "SG",
+      Material: "Willow",
+    },
+    seller: "Sports Arena",
+    sellerRating: 4.5,
+    reviewList: [
+      { name: "Ramesh", comment: "Excellent balance.", time: "1 week ago" },
+    ],
   },
+
   {
     id: 20,
     title: "Self Help Book Collection",
@@ -238,7 +574,23 @@ export const products = [
     category: "books",
     brand: "Penguin",
     image: "/src/assets/products/p20.jpg",
+    images: ["/src/assets/products/p20.jpg"],
+    colors: ["Paperback"],
+    description: "Collection of motivational self-help books.",
+    longDescription:
+      "Ideal for personal growth and self-improvement.",
+    features: ["Best Sellers", "Inspirational Content"],
+    specs: {
+      Publisher: "Penguin",
+      Language: "English",
+    },
+    seller: "Book World",
+    sellerRating: 4.7,
+    reviewList: [
+      { name: "Deepak", comment: "Very inspiring.", time: "4 days ago" },
+    ],
   },
+
   {
     id: 21,
     title: "Laptop Stand Adjustable",
@@ -250,7 +602,23 @@ export const products = [
     category: "electronics",
     brand: "Portronics",
     image: "/src/assets/products/p21.jpg",
+    images: ["/src/assets/products/p21.jpg"],
+    colors: ["Silver"],
+    description: "Adjustable laptop stand for better posture.",
+    longDescription:
+      "Helps reduce neck strain with adjustable height and angle.",
+    features: ["Adjustable Height", "Aluminium Build"],
+    specs: {
+      Brand: "Portronics",
+      Material: "Aluminium",
+    },
+    seller: "Tech Store",
+    sellerRating: 4.4,
+    reviewList: [
+      { name: "Akash", comment: "Very sturdy.", time: "6 days ago" },
+    ],
   },
+
   {
     id: 22,
     title: "Formal Shirt Cotton",
@@ -262,7 +630,23 @@ export const products = [
     category: "fashion",
     brand: "Allen Solly",
     image: "/src/assets/products/p22.jpg",
+    images: ["/src/assets/products/p22.jpg"],
+    colors: ["White", "Blue"],
+    description: "Classic formal cotton shirt.",
+    longDescription:
+      "Perfect for office wear with comfortable fabric.",
+    features: ["Pure Cotton", "Slim Fit"],
+    specs: {
+      Brand: "Allen Solly",
+      Fabric: "Cotton",
+    },
+    seller: "Fashion Hub",
+    sellerRating: 4.3,
+    reviewList: [
+      { name: "Mohit", comment: "Good fabric quality.", time: "5 days ago" },
+    ],
   },
+
   {
     id: 23,
     title: "Mixer Grinder 750W",
@@ -274,7 +658,23 @@ export const products = [
     category: "home-kitchen",
     brand: "Bajaj",
     image: "/src/assets/products/p23.jpg",
+    images: ["/src/assets/products/p23.jpg"],
+    colors: ["White"],
+    description: "Powerful mixer grinder for kitchen use.",
+    longDescription:
+      "Grind and blend efficiently with high-performance motor.",
+    features: ["750W Motor", "Multiple Jars"],
+    specs: {
+      Brand: "Bajaj",
+      Power: "750W",
+    },
+    seller: "HomeEssentials",
+    sellerRating: 4.4,
+    reviewList: [
+      { name: "Sunita", comment: "Works very well.", time: "1 week ago" },
+    ],
   },
+
   {
     id: 24,
     title: "Lipstick Set Matte",
@@ -286,7 +686,23 @@ export const products = [
     category: "beauty",
     brand: "Lakme",
     image: "/src/assets/products/p24.jpg",
+    images: ["/src/assets/products/p24.jpg"],
+    colors: ["Red", "Pink"],
+    description: "Matte finish lipstick set.",
+    longDescription:
+      "Long-lasting matte shades suitable for all occasions.",
+    features: ["Long Lasting", "Smooth Texture"],
+    specs: {
+      Brand: "Lakme",
+      Finish: "Matte",
+    },
+    seller: "Beauty Store",
+    sellerRating: 4.6,
+    reviewList: [
+      { name: "Nisha", comment: "Beautiful shades.", time: "3 days ago" },
+    ],
   },
+
   {
     id: 25,
     title: "Badminton Racket Pro",
@@ -298,7 +714,23 @@ export const products = [
     category: "sports",
     brand: "Yonex",
     image: "/src/assets/products/p25.jpg",
+    images: ["/src/assets/products/p25.jpg"],
+    colors: ["Black"],
+    description: "Professional badminton racket.",
+    longDescription:
+      "Lightweight and durable racket for advanced players.",
+    features: ["Lightweight Frame", "High Tension Support"],
+    specs: {
+      Brand: "Yonex",
+      Weight: "85g",
+    },
+    seller: "Sports Arena",
+    sellerRating: 4.5,
+    reviewList: [
+      { name: "Ravi", comment: "Excellent control.", time: "5 days ago" },
+    ],
   },
+
   {
     id: 26,
     title: "Cookbook Indian Cuisine",
@@ -310,7 +742,23 @@ export const products = [
     category: "books",
     brand: "Penguin",
     image: "/src/assets/products/p26.jpg",
+    images: ["/src/assets/products/p26.jpg"],
+    colors: ["Paperback"],
+    description: "Authentic Indian cuisine cookbook.",
+    longDescription:
+      "Learn traditional and modern Indian recipes easily.",
+    features: ["Authentic Recipes", "Easy Instructions"],
+    specs: {
+      Publisher: "Penguin",
+      Language: "English",
+    },
+    seller: "Book World",
+    sellerRating: 4.6,
+    reviewList: [
+      { name: "Seema", comment: "Recipes are easy.", time: "6 days ago" },
+    ],
   },
+
   {
     id: 27,
     title: "Webcam HD 1080p",
@@ -322,7 +770,23 @@ export const products = [
     category: "electronics",
     brand: "Logitech",
     image: "/src/assets/products/p27.jpg",
+    images: ["/src/assets/products/p27.jpg"],
+    colors: ["Black"],
+    description: "HD webcam for video calls.",
+    longDescription:
+      "Clear 1080p video quality ideal for meetings and streaming.",
+    features: ["Full HD", "Built-in Mic"],
+    specs: {
+      Brand: "Logitech",
+      Resolution: "1080p",
+    },
+    seller: "TechGear Store",
+    sellerRating: 4.4,
+    reviewList: [
+      { name: "Aman", comment: "Video quality is sharp.", time: "3 days ago" },
+    ],
   },
+
   {
     id: 28,
     title: "Backpack Travel",
@@ -334,7 +798,23 @@ export const products = [
     category: "fashion",
     brand: "Skybags",
     image: "/src/assets/products/p28.jpg",
+    images: ["/src/assets/products/p28.jpg"],
+    colors: ["Blue", "Black"],
+    description: "Durable travel backpack.",
+    longDescription:
+      "Spacious backpack suitable for travel and daily use.",
+    features: ["Water Resistant", "Multiple Compartments"],
+    specs: {
+      Brand: "Skybags",
+      Capacity: "30L",
+    },
+    seller: "Fashion Hub",
+    sellerRating: 4.4,
+    reviewList: [
+      { name: "Prateek", comment: "Very spacious.", time: "4 days ago" },
+    ],
   },
+
   {
     id: 29,
     title: "Pressure Cooker 5L",
@@ -346,7 +826,23 @@ export const products = [
     category: "home-kitchen",
     brand: "Prestige",
     image: "/src/assets/products/p29.jpg",
+    images: ["/src/assets/products/p29.jpg"],
+    colors: ["Silver"],
+    description: "5 liter pressure cooker for fast cooking.",
+    longDescription:
+      "Ensures safe and quick cooking for family meals.",
+    features: ["Strong Lid Lock", "Durable Body"],
+    specs: {
+      Brand: "Prestige",
+      Capacity: "5L",
+    },
+    seller: "HomeEssentials",
+    sellerRating: 4.5,
+    reviewList: [
+      { name: "Kavita", comment: "Very safe and sturdy.", time: "1 week ago" },
+    ],
   },
+
   {
     id: 30,
     title: "Perfume Gift Set",
@@ -358,7 +854,23 @@ export const products = [
     category: "beauty",
     brand: "Fogg",
     image: "/src/assets/products/p30.jpg",
+    images: ["/src/assets/products/p30.jpg"],
+    colors: ["Standard"],
+    description: "Premium perfume gift set.",
+    longDescription:
+      "Long-lasting fragrance suitable for daily and special occasions.",
+    features: ["Long Lasting Fragrance", "Gift Pack"],
+    specs: {
+      Brand: "Fogg",
+      Quantity: "100ml",
+    },
+    seller: "Beauty Store",
+    sellerRating: 4.6,
+    reviewList: [
+      { name: "Arpit", comment: "Fragrance lasts long.", time: "2 days ago" },
+    ],
   },
+
   {
     id: 31,
     title: "Football Size 5",
@@ -370,7 +882,23 @@ export const products = [
     category: "sports",
     brand: "Adidas",
     image: "/src/assets/products/p31.jpg",
+    images: ["/src/assets/products/p31.jpg"],
+    colors: ["White"],
+    description: "Professional size 5 football.",
+    longDescription:
+      "Durable football suitable for practice and matches.",
+    features: ["High Durability", "Standard Size"],
+    specs: {
+      Brand: "Adidas",
+      Size: "5",
+    },
+    seller: "Sports Arena",
+    sellerRating: 4.5,
+    reviewList: [
+      { name: "Yash", comment: "Good quality ball.", time: "5 days ago" },
+    ],
   },
+
   {
     id: 32,
     title: "Business Book Collection",
@@ -382,5 +910,24 @@ export const products = [
     category: "books",
     brand: "McGrawHill",
     image: "/src/assets/products/p32.jpg",
-  },
+    images: ["/src/assets/products/p32.jpg"],
+    colors: ["Paperback"],
+    description: "Business and management book collection.",
+    longDescription:
+      "Ideal for entrepreneurs and business professionals.",
+    features: ["Best Sellers", "Practical Knowledge"],
+    specs: {
+      Publisher: "McGrawHill",
+      Language: "English",
+    },
+    seller: "Book World",
+    sellerRating: 4.6,
+    reviewList: [
+      { name: "Sanjay", comment: "Very informative.", time: "6 days ago" },
+    ],
+  }
 ];
+
+
+
+
