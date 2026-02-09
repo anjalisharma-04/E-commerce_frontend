@@ -10,8 +10,8 @@ export const products = [
     reviews: 1250,
     category: "electronics",
     brand: "Sony",
-    image: "/src/assets/products/p1.jpg",
-    images: ["/src/assets/products/p1.jpg"],
+    image: "/products/p1.jpg",
+    images: ["/products/p1.jpg"],
     colors: ["Black", "White", "Blue"],
     description: "Premium wireless headphones with deep bass and clear sound.",
     longDescription:
@@ -34,8 +34,6 @@ export const products = [
     reviewList: [
       { name: "Shyam", comment: "Sound quality is amazing.", time: "2 days ago" },
       { name: "Rohit", comment: "Very comfortable.", time: "5 days ago" },
-      { name: "Ram", comment: "Sound is good.", time: "2 days ago" },
-      { name: "Shalini", comment: "Very good product.", time: "5 days ago" },
     ],
   },
 
@@ -49,8 +47,8 @@ export const products = [
     reviews: 890,
     category: "electronics",
     brand: "Apple",
-    image: "/src/assets/products/p2.jpg",
-    images: ["/src/assets/products/p2.jpg"],
+    image: "/products/p2.jpg",
+    images: ["/products/p2.jpg"],
     colors: ["Black", "Silver"],
     description: "Smart watch to track fitness and health activities.",
     longDescription:
@@ -85,8 +83,8 @@ export const products = [
     reviews: 2340,
     category: "fashion",
     brand: "Levis",
-    image: "/src/assets/products/p3.jpg",
-    images: ["/src/assets/products/p3.jpg"],
+    image: "/products/p3.jpg",
+    images: ["/products/p3.jpg"],
     colors: ["Blue", "Black"],
     description: "Stylish denim jacket for everyday casual wear.",
     longDescription:
@@ -115,8 +113,8 @@ export const products = [
     reviews: 1567,
     category: "home-kitchen",
     brand: "Prestige",
-    image: "/src/assets/products/p4.jpg",
-    images: ["/src/assets/products/p4.jpg"],
+    image: "/products/p4.jpg",
+    images: ["/products/p4.jpg"],
     colors: ["Black"],
     description: "Durable non-stick cookware set for daily cooking.",
     longDescription:
@@ -145,8 +143,8 @@ export const products = [
     reviews: 3450,
     category: "beauty",
     brand: "Lakme",
-    image: "/src/assets/products/p5.jpg",
-    images: ["/src/assets/products/p5.jpg"],
+    image: "/products/p5.jpg",
+    images: ["/products/p5.jpg"],
     colors: ["Standard"],
     description: "Complete skincare solution for glowing skin.",
     longDescription:
@@ -173,8 +171,8 @@ export const products = [
     reviews: 1890,
     category: "sports",
     brand: "Nike",
-    image: "/src/assets/products/p6.jpg",
-    images: ["/src/assets/products/p6.jpg"],
+    image: "/products/p6.jpg",
+    images: ["/products/p6.jpg"],
     colors: ["Black", "White"],
     description: "Lightweight running shoes for workouts.",
     longDescription:
@@ -202,8 +200,8 @@ export const products = [
     reviews: 5670,
     category: "books",
     brand: "Penguin",
-    image: "/src/assets/products/p7.jpg",
-    images: ["/src/assets/products/p7.jpg"],
+    image: "/products/p7.jpg",
+    images: ["/products/p7.jpg"],
     colors: ["Paperback"],
     description: "Collection of popular bestselling novels.",
     longDescription:
@@ -231,8 +229,8 @@ export const products = [
     reviews: 1120,
     category: "electronics",
     brand: "Logitech",
-    image: "/src/assets/products/p8.jpg",
-    images: ["/src/assets/products/p8.jpg"],
+    image: "/products/p8.jpg",
+    images: ["/products/p8.jpg"],
     colors: ["Black"],
     description: "High precision wireless mouse for gaming.",
     longDescription:
@@ -260,8 +258,8 @@ export const products = [
     reviews: 1560,
     category: "electronics",
     brand: "JBL",
-    image: "/src/assets/products/p9.jpg",
-    images: ["/src/assets/products/p9.jpg"],
+    image: "/products/p9.jpg",
+    images: ["/products/p9.jpg"],
     colors: ["Black", "Blue"],
     description: "Portable Bluetooth speaker with powerful sound.",
     longDescription:
@@ -289,8 +287,8 @@ export const products = [
     reviews: 870,
     category: "fashion",
     brand: "Wildcraft",
-    image: "/src/assets/products/p10.jpg",
-    images: ["/src/assets/products/p10.jpg"],
+    image: "/products/p10.jpg",
+    images: ["/products/p10.jpg"],
     colors: ["Brown", "Black"],
     description: "Premium leather wallet with slim design.",
     longDescription:
@@ -306,8 +304,7 @@ export const products = [
       { name: "Ankit", comment: "Looks premium.", time: "1 week ago" },
     ],
   },
-
-    {
+  {
     id: 11,
     title: "Coffee Maker Machine",
     price: 3999,
@@ -317,8 +314,8 @@ export const products = [
     reviews: 920,
     category: "home-kitchen",
     brand: "Philips",
-    image: "/src/assets/products/p11.jpg",
-    images: ["/src/assets/products/p11.jpg"],
+    image: "/products/p11.jpg",
+    images: ["/products/p11.jpg"],
     colors: ["Black"],
     description: "Automatic coffee maker for fresh coffee at home.",
     longDescription:
@@ -346,8 +343,8 @@ export const products = [
     reviews: 1300,
     category: "beauty",
     brand: "Mamaearth",
-    image: "/src/assets/products/p12.jpg",
-    images: ["/src/assets/products/p12.jpg"],
+    image: "/products/p12.jpg",
+    images: ["/products/p12.jpg"],
     colors: ["Standard"],
     description: "Nourishing face serum set for glowing skin.",
     longDescription:
@@ -374,8 +371,8 @@ export const products = [
     reviews: 1000,
     category: "sports",
     brand: "Boldfit",
-    image: "/src/assets/products/p13.jpg",
-    images: ["/src/assets/products/p13.jpg"],
+    image: "/products/p13.jpg",
+    images: ["/products/p13.jpg"],
     colors: ["Purple", "Blue"],
     description: "Premium yoga mat for daily workouts.",
     longDescription:
@@ -403,8 +400,8 @@ export const products = [
     reviews: 1800,
     category: "books",
     brand: "HarperCollins",
-    image: "/src/assets/products/p14.jpg",
-    images: ["/src/assets/products/p14.jpg"],
+    image: "/products/p14.jpg",
+    images: ["/products/p14.jpg"],
     colors: ["Paperback"],
     description: "Gripping mystery thriller novel.",
     longDescription:
@@ -431,8 +428,8 @@ export const products = [
     reviews: 2100,
     category: "electronics",
     brand: "Redragon",
-    image: "/src/assets/products/p15.jpg",
-    images: ["/src/assets/products/p15.jpg"],
+    image: "/products/p15.jpg",
+    images: ["/products/p15.jpg"],
     colors: ["Black"],
     description: "Mechanical keyboard for gaming and typing.",
     longDescription:
@@ -460,8 +457,8 @@ export const products = [
     reviews: 950,
     category: "fashion",
     brand: "RayBan",
-    image: "/src/assets/products/p16.jpg",
-    images: ["/src/assets/products/p16.jpg"],
+    image: "/products/p16.jpg",
+    images: ["/products/p16.jpg"],
     colors: ["Black", "Brown"],
     description: "Stylish designer sunglasses with UV protection.",
     longDescription:
@@ -488,8 +485,8 @@ export const products = [
     reviews: 1600,
     category: "home-kitchen",
     brand: "Havells",
-    image: "/src/assets/products/p17.jpg",
-    images: ["/src/assets/products/p17.jpg"],
+    image: "/products/p17.jpg",
+    images: ["/products/p17.jpg"],
     colors: ["Black"],
     description: "Digital air fryer for healthy cooking.",
     longDescription:
@@ -517,8 +514,8 @@ export const products = [
     reviews: 1400,
     category: "beauty",
     brand: "Philips",
-    image: "/src/assets/products/p18.jpg",
-    images: ["/src/assets/products/p18.jpg"],
+    image: "/products/p18.jpg",
+    images: ["/products/p18.jpg"],
     colors: ["Black"],
     description: "Professional hair dryer for salon finish.",
     longDescription:
@@ -545,8 +542,8 @@ export const products = [
     reviews: 1100,
     category: "sports",
     brand: "SG",
-    image: "/src/assets/products/p19.jpg",
-    images: ["/src/assets/products/p19.jpg"],
+    image: "/products/p19.jpg",
+    images: ["/products/p19.jpg"],
     colors: ["Wood"],
     description: "Professional cricket bat for matches.",
     longDescription:
@@ -573,8 +570,8 @@ export const products = [
     reviews: 2500,
     category: "books",
     brand: "Penguin",
-    image: "/src/assets/products/p20.jpg",
-    images: ["/src/assets/products/p20.jpg"],
+    image: "/products/p20.jpg",
+    images: ["/products/p20.jpg"],
     colors: ["Paperback"],
     description: "Collection of motivational self-help books.",
     longDescription:
@@ -601,8 +598,8 @@ export const products = [
     reviews: 900,
     category: "electronics",
     brand: "Portronics",
-    image: "/src/assets/products/p21.jpg",
-    images: ["/src/assets/products/p21.jpg"],
+    image: "/products/p21.jpg",
+    images: ["/products/p21.jpg"],
     colors: ["Silver"],
     description: "Adjustable laptop stand for better posture.",
     longDescription:
@@ -629,8 +626,8 @@ export const products = [
     reviews: 1200,
     category: "fashion",
     brand: "Allen Solly",
-    image: "/src/assets/products/p22.jpg",
-    images: ["/src/assets/products/p22.jpg"],
+    image: "/products/p22.jpg",
+    images: ["/products/p22.jpg"],
     colors: ["White", "Blue"],
     description: "Classic formal cotton shirt.",
     longDescription:
@@ -657,8 +654,8 @@ export const products = [
     reviews: 1800,
     category: "home-kitchen",
     brand: "Bajaj",
-    image: "/src/assets/products/p23.jpg",
-    images: ["/src/assets/products/p23.jpg"],
+    image: "/products/p23.jpg",
+    images: ["/products/p23.jpg"],
     colors: ["White"],
     description: "Powerful mixer grinder for kitchen use.",
     longDescription:
@@ -685,8 +682,8 @@ export const products = [
     reviews: 2000,
     category: "beauty",
     brand: "Lakme",
-    image: "/src/assets/products/p24.jpg",
-    images: ["/src/assets/products/p24.jpg"],
+    image: "/products/p24.jpg",
+    images: ["/products/p24.jpg"],
     colors: ["Red", "Pink"],
     description: "Matte finish lipstick set.",
     longDescription:
@@ -713,8 +710,8 @@ export const products = [
     reviews: 900,
     category: "sports",
     brand: "Yonex",
-    image: "/src/assets/products/p25.jpg",
-    images: ["/src/assets/products/p25.jpg"],
+    image: "/products/p25.jpg",
+    images: ["/products/p25.jpg"],
     colors: ["Black"],
     description: "Professional badminton racket.",
     longDescription:
@@ -741,8 +738,8 @@ export const products = [
     reviews: 1500,
     category: "books",
     brand: "Penguin",
-    image: "/src/assets/products/p26.jpg",
-    images: ["/src/assets/products/p26.jpg"],
+    image: "/products/p26.jpg",
+    images: ["/products/p26.jpg"],
     colors: ["Paperback"],
     description: "Authentic Indian cuisine cookbook.",
     longDescription:
@@ -769,8 +766,8 @@ export const products = [
     reviews: 1000,
     category: "electronics",
     brand: "Logitech",
-    image: "/src/assets/products/p27.jpg",
-    images: ["/src/assets/products/p27.jpg"],
+    image: "/products/p27.jpg",
+    images: ["/products/p27.jpg"],
     colors: ["Black"],
     description: "HD webcam for video calls.",
     longDescription:
@@ -797,8 +794,8 @@ export const products = [
     reviews: 1300,
     category: "fashion",
     brand: "Skybags",
-    image: "/src/assets/products/p28.jpg",
-    images: ["/src/assets/products/p28.jpg"],
+    image: "/products/p28.jpg",
+    images: ["/products/p28.jpg"],
     colors: ["Blue", "Black"],
     description: "Durable travel backpack.",
     longDescription:
@@ -825,8 +822,8 @@ export const products = [
     reviews: 1400,
     category: "home-kitchen",
     brand: "Prestige",
-    image: "/src/assets/products/p29.jpg",
-    images: ["/src/assets/products/p29.jpg"],
+    image: "/products/p29.jpg",
+    images: ["/products/p29.jpg"],
     colors: ["Silver"],
     description: "5 liter pressure cooker for fast cooking.",
     longDescription:
@@ -853,8 +850,8 @@ export const products = [
     reviews: 1200,
     category: "beauty",
     brand: "Fogg",
-    image: "/src/assets/products/p30.jpg",
-    images: ["/src/assets/products/p30.jpg"],
+    image: "/products/p30.jpg",
+    images: ["/products/p30.jpg"],
     colors: ["Standard"],
     description: "Premium perfume gift set.",
     longDescription:
@@ -881,8 +878,8 @@ export const products = [
     reviews: 950,
     category: "sports",
     brand: "Adidas",
-    image: "/src/assets/products/p31.jpg",
-    images: ["/src/assets/products/p31.jpg"],
+    image: "/products/p31.jpg",
+    images: ["/products/p31.jpg"],
     colors: ["White"],
     description: "Professional size 5 football.",
     longDescription:
@@ -909,8 +906,8 @@ export const products = [
     reviews: 1700,
     category: "books",
     brand: "McGrawHill",
-    image: "/src/assets/products/p32.jpg",
-    images: ["/src/assets/products/p32.jpg"],
+    image: "/products/p32.jpg",
+    images: ["/products/p32.jpg"],
     colors: ["Paperback"],
     description: "Business and management book collection.",
     longDescription:
@@ -925,9 +922,8 @@ export const products = [
     reviewList: [
       { name: "Sanjay", comment: "Very informative.", time: "6 days ago" },
     ],
-  }
+  },
+
 ];
 
-
-
-
+export default products;

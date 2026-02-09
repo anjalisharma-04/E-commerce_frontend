@@ -9,7 +9,6 @@ const MainLayout = () => {
 
   // Pages WITHOUT navbar (clean pages)
   const cleanLayoutPages = [
-    "/products",
     "/profile",
     "/address-book",
     "/my-orders",
