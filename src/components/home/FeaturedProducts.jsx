@@ -13,7 +13,7 @@ const products = [
     oldPrice: 4999,
     discount: "40% off",
     image:
-      "/src/assets/products/p1.jpg",
+      "/products/p1.jpg",
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ const products = [
     oldPrice: 2499,
     discount: "48% off",
     image:
-      "/src/assets/products/p3.jpg",
+      "/products/p3.jpg",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const products = [
     oldPrice: 3999,
     discount: "45% off",
     image:
-      "/src/assets/products/p4.jpg",
+      "/products/p4.jpg",
   },
 
   // -------- SECOND ROW (same component) --------
@@ -94,7 +94,7 @@ const products = [
     oldPrice: 999,
     discount: "40% off",
     image:
-      "/src/assets/products/p7.jpg",
+      "/products/p7.jpg",
   },
   {
     id: 8,
