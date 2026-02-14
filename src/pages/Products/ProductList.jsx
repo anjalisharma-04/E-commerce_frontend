@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { products } from "../../data/products.data";
+import { useWishlist } from "../../services/WishlistContext";
+import { Heart } from "lucide-react"; // ✅ ADDED
 
 const categories = [
   "Electronics","Fashion","Home & Kitchen","Beauty","Books","Sports","Toys & Games",
@@ -9,8 +11,12 @@ const categories = [
 const brands = ["Sony","Apple","Levi's","Prestige","Lakme","Nike","Penguin"];
 
 const ProductList = () => {
+
   const navigate = useNavigate();
   const { category } = useParams();
+
+  // ✅ ADDED (Wishlist Hooks)
+  const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
 
   const cleanCategory = category
     ? category.replace("category-", "").toLowerCase()
@@ -77,7 +83,6 @@ const ProductList = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-6">
 
-      {/* Breadcrumb */}
       <div className="text-sm text-gray-500 mb-4">
         <Link to="/">Home</Link> {" > "}
         <span className="text-gray-800 font-medium">All Products</span>
@@ -149,7 +154,6 @@ const ProductList = () => {
         {/* RIGHT */}
         <div className="flex-1">
 
-          {/* Top white navbar box */}
           <div className="flex justify-between items-center mb-4 bg-white p-4 rounded-xl shadow">
             <div>
               <h2 className="text-xl font-bold">All Products</h2>
@@ -171,22 +175,52 @@ const ProductList = () => {
             </select>
           </div>
 
-          {/* Grid */}
+          {/* GRID */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-            {filteredProducts.map((p) => (
-              <div
-                key={p.id}
-                onClick={() => navigate(`/products/details/${p.id}`)}
-                className="bg-white rounded-xl shadow hover:shadow-lg cursor-pointer"
-              >
-                <img src={p.image} className="w-full h-48 object-cover rounded-t-xl" />
-                <div className="p-3">
-                  <h3 className="font-semibold text-sm">{p.title}</h3>
-                  <p className="text-green-600 text-sm">⭐ {p.rating}</p>
-                  <p className="font-bold">₹{p.price}</p>
+            {filteredProducts.map((p) => {
+              const inWishlist = isInWishlist(p.id);
+
+              return (
+                <div
+                  key={p.id}
+                  onClick={() => navigate(`/products/details/${p.id}`)}
+                  className="bg-white rounded-xl shadow hover:shadow-lg cursor-pointer relative transition"
+                >
+
+                  {/* ✅ WISHLIST BUTTON ADDED */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      inWishlist
+                        ? removeFromWishlist(p.id)
+                        : addToWishlist(p);
+                    }}
+                    className="absolute top-3 right-3 bg-white p-2 rounded-full shadow hover:scale-110 transition"
+                  >
+                    <Heart
+                      size={18}
+                      className={
+                        inWishlist
+                          ? "fill-red-500 text-red-500"
+                          : "text-gray-400"
+                      }
+                    />
+                  </button>
+
+                  <img
+                    src={p.image}
+                    className="w-full h-48 object-cover rounded-t-xl"
+                  />
+
+                  <div className="p-3">
+                    <h3 className="font-semibold text-sm">{p.title}</h3>
+                    <p className="text-green-600 text-sm">⭐ {p.rating}</p>
+                    <p className="font-bold">₹{p.price}</p>
+                  </div>
+
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
         </div>

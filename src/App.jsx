@@ -1,11 +1,14 @@
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./routes/AppRoutes";
+import { WishlistProvider } from "./services/WishlistContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
+    <WishlistProvider>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </WishlistProvider>
   );
 }
 

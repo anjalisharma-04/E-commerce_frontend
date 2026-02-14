@@ -7,48 +7,34 @@ import Footer from "../components/common/Footer";
 const MainLayout = () => {
   const { pathname } = useLocation();
 
-  // Pages where navbar MUST NOT appear
-  const cleanLayoutPages = [
-    "/profile",
-    "/address-book",
-    "/my-orders",
-    "/wishlist",
-    "/support",
-    "/login",
-    "/register",
-  ];
-
-  const isCleanLayout =
-    // exact & prefix matches
-    cleanLayoutPages.some((p) => pathname.startsWith(p)) ||
-
-    // order related
+  // 🔥 Hide layout on these pages
+  const hideLayout =
+    pathname.startsWith("/products/details") || // Product Details
+    pathname.startsWith("/checkout") ||
+    pathname.startsWith("/payment") ||
     pathname.startsWith("/track-order") ||
     pathname.startsWith("/return-order") ||
     pathname.startsWith("/cancel-order") ||
-
-    // 🔥 PRODUCT DETAILS (MOST IMPORTANT)
-    pathname.startsWith("/product/") ||
-    pathname.startsWith("/products/details/") ||
-
-    // checkout flow
-    pathname.startsWith("/checkout") ||
-    pathname.startsWith("/payment");
+    pathname.startsWith("/profile") ||
+    pathname.startsWith("/address-book") ||
+    pathname.startsWith("/my-orders") ||
+    pathname.startsWith("/login") ||
+    pathname.startsWith("/register");
 
   return (
     <>
-      {/* ===== HEADER ===== */}
-      {!isCleanLayout && <TopBar />}
-      {!isCleanLayout && <Navbar />}
-      {!isCleanLayout && <CategoryMenu />}
+      {/* Header */}
+      {!hideLayout && <TopBar />}
+      {!hideLayout && <Navbar />}
+      {!hideLayout && <CategoryMenu />}
 
-      {/* ===== PAGE CONTENT ===== */}
+      {/* Page Content */}
       <main className="min-h-screen bg-[#FFF7ED]">
         <Outlet />
       </main>
 
-      {/* ===== FOOTER ===== */}
-      {!isCleanLayout && <Footer />}
+      {/* Footer */}
+      {!hideLayout && <Footer />}
     </>
   );
 };

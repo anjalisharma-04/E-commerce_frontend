@@ -42,7 +42,7 @@ const Checkout = () => {
       price: 3999,
       oldPrice: 5999,
       qty: 1,
-      image: "/src/assets/products/p1.jpg",
+      image: "/products/p1.jpg",
       color: "Black",
     },
     {
@@ -51,7 +51,7 @@ const Checkout = () => {
       price: 12999,
       oldPrice: 15999,
       qty: 2,
-      image: "/src/assets/products/p2.jpg",
+      image: "/products/p2.jpg",
       color: "Space Gray",
     },
   ];

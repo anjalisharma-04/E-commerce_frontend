@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Payment = () => {
   const [method, setMethod] = useState("upi");
   const [upiId, setUpiId] = useState("");
-  const navigate = useNavigate(); // ✅ missing before
+  const navigate = useNavigate();
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-6 bg-gray-50">

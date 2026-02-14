@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { products } from "../../data/products.data"; // ✅ ADDED
 
 const Cart = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const Cart = () => {
       seller: "AudioTech Store",
       color: "Black",
       qty: 1,
-      image: "/src/assets/products/p1.jpg",
+      image: "./products/p1.jpg",
     },
     {
       id: 2,
@@ -25,9 +26,15 @@ const Cart = () => {
       seller: "FitTech Solutions",
       color: "Space Gray",
       qty: 2,
-      image: "/src/assets/products/p2.jpg",
+      image: "./products/p2.jpg",
     },
   ]);
+
+  // ✅ RECOMMENDED PRODUCTS (Random 4 Different Products)
+  const recommendedProducts = [...products]
+    .filter((p) => !cartItems.some((item) => item.id === p.id))
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 4);
 
   const increaseQty = (id) => {
     setCartItems(
@@ -104,7 +111,6 @@ const Cart = () => {
                 </div>
               </div>
 
-              {/* Qty Controls */}
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => decreaseQty(item.id)}
@@ -175,15 +181,15 @@ const Cart = () => {
         <h3 className="font-bold mb-4">You might also like</h3>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="border rounded p-2 text-center">
+          {recommendedProducts.map((item) => (
+            <div key={item.id} className="border rounded p-2 text-center">
               <img
-                src="/src/assets/products/p2.jpg"
-                alt="recommended"
+                src={item.image}
+                alt={item.title}
                 className="mx-auto h-28 object-contain"
               />
-              <p className="mt-2 text-sm">Recommended Product {i}</p>
-              <p className="font-bold">₹1,999</p>
+              <p className="mt-2 text-sm">{item.title}</p>
+              <p className="font-bold">₹{item.price}</p>
             </div>
           ))}
         </div>

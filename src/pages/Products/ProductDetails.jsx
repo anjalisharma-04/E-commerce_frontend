@@ -1,6 +1,8 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useMemo, useState } from "react";
 import { products } from "../../data/products.data";
+import { Heart } from "lucide-react";
+
 
 const ProductDetails = () => {
   const { id } = useParams();
