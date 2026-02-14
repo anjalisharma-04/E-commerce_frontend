@@ -155,7 +155,7 @@ const FeaturedProducts = () => {
                 src={product.image}
                 alt={product.title}
                 className="w-full h-48 object-contain mb-4 cursor-pointer"
-                onClick={() => navigate(`/products/${product.id}`)}
+                onClick={() => navigate(`/products/details/${product.id}`)}
               />
 
               {/* Content */}
